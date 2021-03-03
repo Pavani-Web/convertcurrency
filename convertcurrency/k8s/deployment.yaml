@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: convertcurrency
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: convertcurrency
+  template:
+    metadata:
+      labels:
+        app: convertcurrency
+    spec:
+      containers:
+      - name: convertcurrency
+        image: pavanitej/convertcurrency:1.0.0
+        resources:
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8090
