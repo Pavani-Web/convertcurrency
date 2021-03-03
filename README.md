@@ -9,5 +9,5 @@ https://localhost:8090/swagger-ui/index.html
  Url of Eureka Server is : http://localhost:8761
  
  Circuit breaker is implemented by using Resilence4j library.
- OpenFiegn Clien is used for to call currency conversion factor microservice
+ OpenFiegn Client is used for to call currency conversion factor microservice
  
