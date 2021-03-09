@@ -11,7 +11,7 @@ Convertcurrency microservice is registered in the eureka server
  Circuit breaker is implemented by using Resilence4j library.</br>
  OpenFiegn Client is used for to call currency conversion factor microservice</br>
  
-Docker image pull:         docker pull microserviceapps/convertcurrency</br>
+Docker image pull:         docker pull microserviceapps/convertcurrency:1.0.0</br>
 Docker run:          docker run -p 8090:8090 microserviceapps/convertcurrency:1.0.0
 
 
