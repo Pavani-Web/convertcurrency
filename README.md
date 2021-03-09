@@ -14,5 +14,4 @@ Convertcurrency microservice is registered in the eureka server
 Docker image pull:         docker pull microserviceapps/convertcurrency</br>
 Docker run:          docker run -p 8090:8090 microserviceapps/convertcurrency:1.0.0
 
-#Deployed in to IBM kubernates cluster
-URL to access the microservice in kubernates cluster is :  http://169.57.99.245:30081/swagger-ui/index.html
+
