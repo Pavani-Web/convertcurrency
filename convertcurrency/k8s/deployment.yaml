@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: convertcurrency
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: convertcurrency
@@ -14,10 +14,10 @@ spec:
     spec:
       containers:
       - name: convertcurrency
-        image: pavanitej/convertcurrency:1.0.0
+        image: microserviceapps/convertcurrency:1.0.0
         resources:
           limits:
-            memory: "512Mi"
+            memory: "128Mi"
             cpu: "500m"
         ports:
         - containerPort: 8090
