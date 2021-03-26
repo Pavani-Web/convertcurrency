@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -11,5 +12,5 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public interface CurrencyFactorClient {
 
 	@RequestMapping(value = "/currecyconversionfactor/get/{code}", produces = {"*/*"}, method = RequestMethod.GET)
-	 Double getConversionFactor(@PathVariable("code") String code);
+	 Double getConversionFactor(@RequestHeader("Authorization") String authorizationHeader, @PathVariable("code") String code);
 }
